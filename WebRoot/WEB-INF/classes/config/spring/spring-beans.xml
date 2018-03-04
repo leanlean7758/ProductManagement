@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+<!-- 	<bean id="loginDao" class="com.ProjectAffirm.dao.impl.LoginDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="loginManagerBase" class="com.ProjectAffirm.manager.impl.LoginManagerImpl">
+		<property name="loginDao" ref="loginDao"></property>
+	</bean>
+	<bean name="loginManager" parent="transactionProxy">
+		<property name="target" ref="loginManagerBase"></property>
+	</bean>
+ -->	
+	
+	
+	<!-- 此处为代理
+	<bean name="loginManager" parent="transactionProxy">
+		<property name="target" ref="loginManagerBase"></property>
+	</bean>
+	
+	<bean id="loginDao" class="com.ProjectAffirm.dao.impl.LoginDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="loginManagerBase" class="com.tgb.manager.impl.LoginManagerImpl">
+		<property name="loginDao" ref="loginDao"></property>
+	</bean>
+	
+	<bean name="loginManager" parent="transactionProxy">
+		<property name="target" ref="loginManagerBase"></property>
+	</bean> -->
+	
+	
+	
+</beans>
